@@ -1,4 +1,5 @@
-import streamlit
+import streamlit as st
 
-streamlit.title('Mom and Pop\'s New Healthy Diner')
-
+st.title('Mom and Pop\'s New Healthy Diner')
+st.subheader('Menu')
+st.body('Veggie burger')
