@@ -25,4 +25,4 @@ fruits_to_show = my_fruit_list.loc[fruits_selected]
 #Display the fruits table
 st.dataframe(fruits_to_show)
 
-st.text(fruityvice_respose)
+st.text(fruityvice_response)
