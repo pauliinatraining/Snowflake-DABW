@@ -28,4 +28,5 @@ st.dataframe(fruits_to_show)
 # Display fruityvice api response
 st.header('Fruityvice Fruit Advice!')
 
-st.text(fruityvice_response.json())
+fruityvice_normalized = pd.json_normalize(fruityvice_response.json())
+st.dataframe(fruityvice_normalized)
