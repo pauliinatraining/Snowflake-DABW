@@ -27,8 +27,8 @@ st.dataframe(fruits_to_show)
 st.header('Fruityvice Fruit Advice!')
 
 fruit_choice = st.text_input('What fruit would you like to learn about?', 'Kiwi')
-st.write('You entered', current_fruit)
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + current_fruit)
+st.write('You entered', fruit_choice)
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_choice)
 
 fruityvice_normalized = pd.json_normalize(fruityvice_response.json())
 st.dataframe(fruityvice_normalized)
