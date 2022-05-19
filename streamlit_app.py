@@ -55,7 +55,7 @@ except URLError as e:
   st.error()
 
 #snowflake
-st.header("The fruit list contains:")
+st.header("View Out Fruit List - Add Your Favorites!")
 
 # a button to load the fruit
 if st.button('Get Fruit Load List'):
